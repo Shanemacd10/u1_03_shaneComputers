@@ -1,0 +1,69 @@
+<Window x:Class="u1_03_ShaneComputer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:u1_03_ShaneComputer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        WindowState="Maximized">
+    <StackPanel>
+
+        <Grid>
+            <Label x:Name="lbl_caption" Content="CPU"/>
+
+
+            <TextBlock>
+                <Hyperlink x:Name="LinkCPU" RequestNavigate="LinkCPU_RequestNavigate" NavigateUri="http://www.pc-canada.com/item/FD8370FRHKBOX.html?utm_source=pcpartpicker&utm_medium=affiliate&utm_campaign=pcpartpicker">
+                    <Image x:Name="imgCPU"
+                   Height="200"
+                   Source="https://hothardware.com/articleimages/Item2225/small_fx-refresh-4.jpg"
+                   Visibility="Visible"
+           </Image>
+                    </Hyperlink>
+                </TextBlock>
+            <Image x:Name="imgMotherboard"
+                   Height="200"
+                   Source="http://www.legitreviews.com/images/reviews/1851/asrock-x79-extreme9-layout-1.jpg"
+                   Visibility="Hidden"
+                   />
+            <Image x:Name="imgCase"
+                   Height="200"
+                   Source="https://uae.microless.com/cdn/products/4316a8022a3ae5e2d1ae96f01c9468dc-md.jpg"
+                   Visibility="Hidden"
+                   />
+            <Image x:Name="imgPowerSupply"
+                   Height="200"
+                   Source="https://www.computerhouse.co.za/wp-content/uploads/2017/05/01-39.png"
+                   Visibility="Hidden"
+                   />
+            <Image x:Name="imgRAM"
+                   Height="200"
+                   Source="https://images10.newegg.com/NeweggImage/ProductImage/20-231-508-02.jpg"
+                   Visibility="Hidden"
+                   />
+            <Image x:Name="imgVideoCard"
+                   Height="200"
+                   Source="https://www.workstationspecialist.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/n/v/nvidia-quadro-gp100-3.jpg"
+                   Visibility="Hidden"
+                   />
+            <Image x:Name="imgStorage"
+                   Height="200"
+                   Source=""
+                   Visibility="Hidden"
+                   
+                  />
+            <Image x:Name="imgMonitor"
+                   Height="200"
+                   Source=""
+                   Visibility="Hidden"
+                   />
+
+            <Slider x:Name="slider1"
+                    Maximum="8"
+                    ValueChanged="slider1_ValueChanged" LargeChange="1" SmallChange="1" TickPlacement="TopLeft" IsSnapToTickEnabled="True" 
+                    Visibility="Visible" Margin="0,215,0,-215" />
+
+        </Grid>
+    </StackPanel>
+</Window>
